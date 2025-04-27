@@ -57,11 +57,12 @@ This project consists of a **Frontend** built with React and Vite, and a **Backe
    - Navigate to the `backend` directory and start the server:
      ```bash
      cd ../backend
-     npm start
+     npm run start
      ```
 
 5. **Access the Application**:
-   - Open your browser and navigate to `http://localhost:3000` (or the port specified by the frontend).
+   - Open your browser and navigate to `http://localhost:3000` (or the port specified by the backend).
+   - Open your browser and navigate to `http://localhost:5173` (or the port specified by the frontend).
 
 ### Notes
 - Ensure both the frontend and backend servers are running simultaneously.
