@@ -1,4 +1,4 @@
-# AI Project
+# AI Voice Assistent Agent - AI Product Support Bot
 
 This project consists of a **Frontend** built with React and Vite, and a **Backend** built with Express.js. The application provides a Help Desk Chat interface with speech recognition and text-to-speech capabilities.
 
@@ -15,9 +15,57 @@ This project consists of a **Frontend** built with React and Vite, and a **Backe
 - **Framer Motion**: For animations.
 - **Lucide Icons**: For modern UI icons.
 
-### File Structure
+
+## Backend
+### Features
+- **RAG_EPSILLA_WEB**: Backend is powered by a Retrieval-Augmented Generation (RAG) system using [Epsilla](https://www.epsilla.com/).
+- **API Key Configuration**: Requires setting and replacing the Epsilla API key.
+- **LLM Integration**: Supports any LLM model by setting the appropriate API key (e.g., `GEMINI_API_KEY`).
+- **Data Handling**: Supports both structured and unstructured data ingestion into Epsilla for relevant question-answering based on fed data.
+- **Flexible Querying**: Enables context-aware, intelligent conversations based on your uploaded or structured datasets.
+
 
 ---
+
+### File Structure
+
+```
+AI-voice-agent/
+├── backend/
+│   ├── node_modules/
+│   ├── src/
+│   │   ├── controllers/
+│   │   ├── routes/
+│   │   ├── services/
+│   │   └── app.js
+│   ├── .env
+│   ├── package.json
+│   └── README.md
+├── frontend/
+│   ├── node_modules/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── pages/
+│   │   ├── styles/
+│   │   └── main.jsx
+│   ├── .env
+│   ├── package.json
+│   └── README.md
+├── .gitignore
+├── README.md
+└── LICENSE
+```
+
+### Explanation
+- **backend/**: Contains the server-side code, including controllers, routes, and services.
+- **frontend/**: Contains the client-side code, including React components, hooks, and styles.
+- **node_modules/**: Auto-generated directory for dependencies (not included in version control).
+- **.env**: Environment configuration files for both frontend and backend.
+- **README.md**: Documentation for each respective directory and the root project.
+- **LICENSE**: License file for the project.
+- **.gitignore**: Specifies files and directories to ignore in version control.
 
 ## Project Setup
 
